@@ -37,3 +37,11 @@ body {
 
     background : darkkhaki;
 }
+
+#option-pane,
+#single-pane,
+#downer-pane,
+#siderr-pane {
+
+    opacity : 0.5;
+}

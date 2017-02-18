@@ -1,0 +1,33 @@
+/*
+|
+|   main css
+|
+*/
+
+#option-pane .placeholder,
+#single-pane .placeholder {
+
+    height  : 14vh;
+    width   : 80%;
+
+    margin-top  : 14vh;
+    margin-left : 10%;
+
+    background  : white;
+    opacity     : 0.2;
+}
+
+#downer-pane .placeholder,
+#siderr-pane .placeholder {
+
+    float : left;
+
+    height  : 10vh;
+    width   : 14%;
+
+    margin-top  : 10vh;
+    margin-left : 14%;
+
+    background  : white;
+    opacity     : 0.2;
+}
