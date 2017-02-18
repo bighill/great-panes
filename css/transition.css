@@ -1,0 +1,45 @@
+/*
+|
+|   transition css
+|
+*/
+
+#option-pane,
+#single-pane,
+#downer-pane,
+#siderr-pane {
+
+    transition : all 111ms ease-in;
+    pointer-events  : none;
+}
+
+#option-pane {
+
+    transform : translateX( -100% );
+}
+
+#single-pane {
+
+    transform : translateX( 100% );
+}
+
+#downer-pane {
+
+    transform : translateY( -100% );    
+}
+
+#siderr-pane {
+
+    transform : translateX( 100% );
+}
+
+#option-pane.show,
+#single-pane.show,
+#downer-pane.show,
+#siderr-pane.show {
+
+    transition : all 333ms ease-out;
+    
+    transform       : none;
+    pointer-events  : auto;
+}

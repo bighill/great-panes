@@ -1,0 +1,39 @@
+/*
+|
+|   theme css
+|
+*/
+
+body {
+
+    background  : black;
+    color       : grey;
+
+    font-family : monospace;
+}
+
+.btn {
+
+    padding : 1em;
+    cursor  : pointer;
+}
+
+#option-pane {
+
+    background : chocolate;
+}
+
+#single-pane {
+
+    background : skyblue;
+}
+
+#downer-pane {
+
+    background : tomato;
+}
+
+#siderr-pane {
+
+    background : darkkhaki;
+}
