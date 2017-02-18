@@ -1,0 +1,69 @@
+/*
+|
+|   color css
+|
+*/
+
+body {
+
+    background  : black;
+    color       : grey;
+
+    font-family : monospace;
+}
+
+nav {
+    border : 1px dashed white;
+}
+
+#nav-bg {
+
+    background  : black;
+    opacity     : 0.9;
+}
+
+#option-pane {
+
+    background : skyblue;
+}
+nav .option {
+    border : 1px solid skyblue;
+}
+
+#single-pane {
+
+    background : darkkhaki;
+}
+nav .single {
+    border : 1px solid darkkhaki;
+}
+
+#downer-pane {
+
+    background : tomato;
+}
+nav .downer {
+    border : 1px solid tomato;
+}
+
+#siderr-pane {
+
+    background : chocolate;
+}
+nav .siderr {
+    border : 1px solid chocolate;
+}
+
+#option-pane,
+#single-pane,
+#downer-pane,
+#siderr-pane {
+
+    opacity : 0.5;
+}
+
+.placeholder {
+
+    background  : white;
+    opacity     : 0.2;
+}

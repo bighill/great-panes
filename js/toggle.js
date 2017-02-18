@@ -10,10 +10,10 @@ var Toggle = {
 
     bttn : {
 
-        option : document.getElementsByClassName( 'option-btn' ),
-        single : document.getElementsByClassName( 'single-btn' ),
-        downer : document.getElementsByClassName( 'downer-btn' ),
-        siderr : document.getElementsByClassName( 'siderr-btn' ),
+        option : document.getElementsByClassName( 'option' ),
+        single : document.getElementsByClassName( 'single' ),
+        downer : document.getElementsByClassName( 'downer' ),
+        siderr : document.getElementsByClassName( 'siderr' ),
     },
 
     pane : {

@@ -1,0 +1,195 @@
+/*
+|
+|   default css
+|   ...default states of elements
+|
+*/
+
+*, *:before, *:after {
+
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    padding : 0;
+    margin  : 0;
+}
+
+/*
+|
+|   sizes
+|
+*/
+
+html,
+body,
+#list-pane,
+.option,
+.single {
+
+    width   : 100%; 
+    height  : 100%;
+}
+
+nav {
+
+    width   : 20%;
+    height  : 20%;
+}
+
+#nav-bg {
+
+    width   : 62%;
+    height  : 62%;
+}
+
+.downer {
+
+    width   : 100%; 
+    height  : 33%;
+}
+
+.siderr {
+
+    width   : 100%; 
+    height  : 33%;    
+}
+
+#option-pane .placeholder,
+#single-pane .placeholder {
+
+    height  : 14%;
+    width   : 80%;
+}
+
+#downer-pane .placeholder,
+#siderr-pane .placeholder {
+
+    height  : 10vh;
+    width   : 14%;
+    
+}
+
+/*
+|
+|   positions
+|
+*/
+
+nav {
+
+    position    : fixed;
+    top         : 40%;
+    left        : 40%;
+}
+
+#nav-bg {
+
+    position    : fixed;
+    top         : 19%;
+    left        : 19%;
+}
+
+nav .option,
+nav .single,
+nav .downer,
+nav .siderr {
+
+    position : absolute;
+}
+
+#list-pane,
+#option-pane,
+#single-pane,
+#downer-pane,
+#siderr-pane {
+
+    position : fixed;
+}
+
+.option,
+.single,
+.downer,
+.siderr {
+
+    left : 0;
+}
+
+.option,
+.single,
+.downer {
+
+    top : 0;
+}
+
+.siderr {
+
+    bottom : 0;
+}
+
+.option {
+
+    transform : translateX( -102% );
+}
+
+.downer {
+
+    transform : translateY( -102% );
+}
+
+.single,
+.siderr {
+
+    transform : translateX( 102% );
+}
+
+#option-pane .placeholder,
+#single-pane .placeholder {
+
+    margin-top  : 14vh;
+    margin-left : 10%;
+}
+
+#downer-pane .placeholder,
+#siderr-pane .placeholder {
+
+    float : left;
+
+    margin-top  : 10vh;
+    margin-left : 14%;
+}
+
+/*
+|
+|   z-index
+|
+*/
+
+#list-pane {
+
+    z-index : 0;
+}
+
+#option-pane,
+#single-pane {
+
+    z-index : 11;
+}
+
+#downer-pane,
+#siderr-pane {
+
+    z-index : 33;
+}
+
+#nav-bg {
+
+    z-index : 101;
+}
+
+nav {
+
+    z-index : 111;
+}

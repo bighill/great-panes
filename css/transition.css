@@ -4,54 +4,19 @@
 |
 */
 
-#option-pane,
-.option-btn,
-#single-pane,
-.single-btn,
-#downer-pane,
-.downer-btn,
-#siderr-pane,
-.siderr-btn {
+.option,
+.single,
+.downer,
+.siderr {
 
     transition : all 333ms ease-in;
-    /*pointer-events  : none;*/
 }
 
-#option-pane,
-.option-btn {
+.option.show,
+.single.show,
+.downer.show,
+.siderr.show {
 
-    transform : translateX( -102% );
-}
-
-#single-pane,
-.single-btn {
-
-    transform : translateX( 102% );
-}
-
-#downer-pane,
-.downer-btn {
-
-    transform : translateY( -102% );    
-}
-
-#siderr-pane,
-.siderr-btn {
-
-    transform : translateX( 102% );
-}
-
-#option-pane.show,
-.option-btn.show,
-#single-pane.show,
-.single-btn.show,
-#downer-pane.show,
-.downer-btn.show,
-#siderr-pane.show,
-.siderr-btn.show {
-
-    transition : all 333ms ease-out;
-    
-    transform       : none;
-    /*pointer-events  : auto;*/
+    transition  : all 333ms ease-out;    
+    transform   : none;
 }
