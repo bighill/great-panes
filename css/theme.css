@@ -12,12 +12,6 @@ body {
     font-family : monospace;
 }
 
-.btn {
-
-    padding : 1em;
-    cursor  : pointer;
-}
-
 #option-pane {
 
     background : chocolate;

@@ -73,12 +73,3 @@ body,
 
     z-index : 33;
 }
-
-nav {
-
-    position    : fixed;
-    top         : 33%;
-    left        : 33%;
-
-    z-index     : 111;
-}

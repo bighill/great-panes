@@ -8,7 +8,7 @@
 
 var Toggle = {
 
-    btn : {
+    bttn : {
 
         option : document.getElementsByClassName( 'option-btn' ),
         single : document.getElementsByClassName( 'single-btn' ),
@@ -27,17 +27,17 @@ var Toggle = {
 
 Toggle.listeners = function()
 {
-    for ( var i = 0; i < this.btn.option.length; i++ )
-        _listener( this.btn.option[i], this.optionPane.bind(this) );
+    for ( var i = 0; i < this.bttn.option.length; i++ )
+        _listener( this.bttn.option[i], this.optionPane.bind(this) );
 
-    for ( var i = 0; i < this.btn.single.length; i++ )
-        _listener( this.btn.single[i], this.singlePane.bind(this) );
+    for ( var i = 0; i < this.bttn.single.length; i++ )
+        _listener( this.bttn.single[i], this.singlePane.bind(this) );
 
-    for ( var i = 0; i < this.btn.downer.length; i++ )
-        _listener( this.btn.downer[i], this.downerPane.bind(this) );
+    for ( var i = 0; i < this.bttn.downer.length; i++ )
+        _listener( this.bttn.downer[i], this.downerPane.bind(this) );
 
-    for ( var i = 0; i < this.btn.siderr.length; i++ )
-        _listener( this.btn.siderr[i], this.siderrPane.bind(this) );
+    for ( var i = 0; i < this.bttn.siderr.length; i++ )
+        _listener( this.bttn.siderr[i], this.siderrPane.bind(this) );
 };
 
 Toggle.optionPane = function( ev )
@@ -45,7 +45,8 @@ Toggle.optionPane = function( ev )
     if ( ev )
         ev.preventDefault();
 
-    this.pane.option.classList.toggle( 'show' );
+    for ( var i = 0; i < this.bttn.option.length; i++ )
+        this.bttn.option[i].classList.toggle( 'show' );
 
     console.info('toggle option pane');
 };
@@ -55,7 +56,8 @@ Toggle.singlePane = function( ev )
     if ( ev )
         ev.preventDefault();
 
-    this.pane.single.classList.toggle( 'show' );
+    for ( var i = 0; i < this.bttn.single.length; i++ )
+        this.bttn.single[i].classList.toggle( 'show' );
 
     console.info('toggle single pane');
 };
@@ -65,7 +67,8 @@ Toggle.downerPane = function( ev )
     if ( ev )
         ev.preventDefault();
 
-    this.pane.downer.classList.toggle( 'show' );
+    for ( var i = 0; i < this.bttn.downer.length; i++ )
+        this.bttn.downer[i].classList.toggle( 'show' );
 
     console.info('toggle downer pane');
 };
@@ -75,7 +78,8 @@ Toggle.siderrPane = function( ev )
     if ( ev )
         ev.preventDefault();
 
-    this.pane.siderr.classList.toggle( 'show' );
+    for ( var i = 0; i < this.bttn.siderr.length; i++ )
+        this.bttn.siderr[i].classList.toggle( 'show' );
 
     console.info('toggle siderr pane');
 };
